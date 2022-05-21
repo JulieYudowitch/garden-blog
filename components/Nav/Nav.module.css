@@ -1,0 +1,298 @@
+.navbarcont {
+    background-color: #0d3f36;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    color: rgb(227, 238, 242);
+}
+
+.navbar {
+    display: flex;
+    font-size: 26px;
+    position: relative;
+    z-index: 666;
+}
+
+.leftside {
+    width: 20%;
+    margin: 0px 0px 0px 5px;
+    padding-top: 7px;
+}
+
+
+
+
+
+.navbar h1 {
+    color: #d4d9df;
+}
+
+.rightsidecont {
+    justify-content: right;
+    width: 80%;
+
+}
+
+.rightside {
+    justify-content: right;
+    padding: 30px 30px 20px 10px;
+    margin: auto;
+
+}
+
+.navlinkname {
+    padding: 0px 10px 0px 30px;
+    width: 100%;
+    margin: 0;
+
+}
+
+.navlinkname:hover {
+    position: relative;
+    top: -3px;
+    color: #d4d9df;
+}
+
+.navlinkname:focus {
+    position: relative;
+    top: -3px;
+    color: #d4d9df;
+}
+
+.navlinkname:active {
+    position: relative;
+    top: -3px;
+    color: #d4d9df;
+}
+
+.navbarlinks {
+    display: flex;
+    justify-content: right;
+}
+
+.navlink {
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 30px;
+    color: #d4d9df;
+    text-align: center;
+}
+
+
+
+.mobilemenuicon {
+    display: none;
+}
+
+@media (max-width: 1700px) {
+    .switchlang {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .rightside {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .navbar {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navbar {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .leftside {
+        width: 25%;
+    }
+
+    .switchlang {}
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+        font-size: 17px;
+    }
+
+    .navlinkname {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        font-size: 16px;
+    }
+
+    .navlinkname {
+        padding: 5px 12px;
+    }
+
+    .switchlang {
+        padding-top: 15px;
+    }
+
+    .langbutt {
+        font-size: 20px;
+    }
+
+    .rightside {
+        padding-bottom: 4px;
+    }
+}
+
+@media (max-width: 900px) {
+    .rightside {
+        padding: 10px 15px 0px
+    }
+
+    .switchlang {}
+
+    .navlinkname {
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .navlinkname {
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        max-width: 100%;
+
+    }
+
+    .mobilemenuicon {
+        display: flex;
+        font-size: x-large;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .navbarlinks {
+        display: none;
+    }
+
+    .navbar .rightside #hidden {
+        position: absolute;
+        height: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0e1d30;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        padding-top: 20px;
+        padding-bottom: 40px;
+        z-index: 555;
+        padding-top: 80px;
+    }
+    .hiddenMenu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .navlink {
+        display: block;
+        width: 100%;
+
+    }
+
+    .navlinkname {
+        font-size: 20px;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .leftside {
+        width: 30%;
+    }
+
+    .switchlang {
+        position: absolute;
+        top: -20px;
+        right: 80px;
+        padding-right: 0;
+    }
+
+    .langbutt {
+        margin: 30px 0px;
+    }
+
+    .rightsidecont {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leftside {
+        width: 35%
+    }
+}
+
+@media (max-width: 550px) {
+    .leftside {
+        width: 30%;
+    }
+
+    .langbutt {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 500px) {}
+
+@media (max-width: 450px) {
+    .logo {
+        width: 80%;
+    }
+
+    .switchlang {
+        right: 70px;
+    }
+}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 400px) {}
+
+@media (max-width: 370px) {}
+
+@media (max-width: 350px) {
+
+    .switchlang {
+        right: 60px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .switchlang {
+        right: 50px;
+    }
+}
+
+@media (max-width: 300px) {}

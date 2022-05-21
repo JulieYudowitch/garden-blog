@@ -1,0 +1,103 @@
+.aboutPage {
+color: #0e1d30;
+}
+
+.aboutPageContent {  
+  position: relative;  
+  padding-top: 200px;
+}
+
+.aboutGrid { 
+  padding: 50px;
+  gap: 50px;
+}
+
+.aboutImgContainer {
+  grid-area: abtimg;
+  margin: 0;
+}
+.aboutImg {
+  display: flex;
+  border: 0.5px solid rgb(175, 173, 173);
+  box-shadow: 2px 3px 5px rgb(68, 66, 66);
+  width: 100%;
+  margin: auto;
+}
+
+.aboutImgName {
+  margin-bottom: 50px;
+  font-size: 33px;
+}
+
+.infoContainer {
+  grid-area: abt;
+  margin: 0;
+}
+
+.info {
+margin-bottom: 50px;
+  font-size: 25px;
+  border: 0.5px solid rgb(175, 173, 173);
+  box-shadow: 2px 3px 5px rgb(68, 66, 66);
+  background-color: rgb(197, 221, 205);
+  padding: 60px;
+}
+
+.infoUL {
+ padding: 0;
+}
+
+.infoLI {
+ margin: 15px;
+}
+
+@media (max-width: 1550px) {
+  .info {
+    font-size: 18px;
+  }
+
+  .aboutPageContent {
+    padding-top: 110px;
+  }
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .aboutGrid {
+    grid-template-areas:
+      "abtimg"
+      "abt"
+      ;
+    grid-template-columns: 100%;
+  }
+   .aboutPageContent {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+.aboutPageContent {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 800px) {
+.aboutGrid {
+  padding: 20px;
+}
+.info {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+.aboutPageContent {
+    padding-top: 80px;
+  }
+  .info {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,101 @@
+.footer {
+    border-top: 0.5px solid grey;
+    color: rgb(227, 238, 242);
+}
+.footContent {   
+    background-color: #313122;
+    margin: 0;
+    padding: 80px;
+}
+
+.socialLinks {
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socialLink {
+    padding: 20px;    
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center; 
+}
+
+.info {
+       color: rgb(99, 36, 36);
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 20px;
+    
+}
+
+.payMethods {    
+    display: flex;
+    padding-bottom: 20px;
+    width: 20%;
+    margin: auto;
+}
+@media (max-width: 1700px) {
+.payMethods {
+    width: 25%;
+}
+}
+
+@media (max-width: 1400px) {
+.payMethods {
+    width: 30%;
+}
+}
+
+@media (max-width: 1200px) {
+.payMethods {
+    width: 35%;
+}
+}
+@media (max-width: 1000px) {
+    .payMethods {
+        width: 40%;
+    }
+}
+@media (max-width: 800px) {
+   .info {
+       font-size: 16px;
+   } 
+
+   .copyright {
+    font-size: 14px;
+}
+}
+
+@media (max-width: 700px) {
+    .payMethods {
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .payMethods {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+
+.payMethods {
+    width: 80%;
+}
+}
+
+@media (max-width: 350px) {
+.payMethods {
+    width: 95%;
+}
+}
