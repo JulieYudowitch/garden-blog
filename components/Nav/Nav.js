@@ -1,15 +1,15 @@
 import styles from "./Nav.module.css";
 import Link from "next/link";
-import { useState, useEffect, useRef } from "react";
-import Image from "next/dist/client/image";
+import { useState, useEffect, useRef, useContext } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { BsGlobe2 } from 'react-icons/bs';
 import React from 'react';
+import AuthContext from '../../stores/authContext';
 
 
 function Nav(props) { 
   const [showMobileNav, setShowMobileNav] = useState(false);
   let menuref = useRef();
+  const { user, login } = useContext(AuthContext);
 
   useEffect(() => {
     let handler = (event) => {
@@ -39,9 +39,7 @@ function Nav(props) {
       <div className={styles.navbar}>
         <div className={styles.leftside}>
           <Link href="/" passHref>
-            <div className={styles.logo}>
-              Julie Yudowitch
-            </div>
+            <div className={styles.logo}>Julie Yudowitch</div>
           </Link>
         </div>
 
@@ -79,6 +77,11 @@ function Nav(props) {
                 >
                   <p className={styles.navlinkname}>BLOGS</p>
                 </Link>
+              </div>
+              <div>
+                
+                  <p className={styles.navlinkname} onClick={login}>LOG IN</p>
+                
               </div>
 
               <div

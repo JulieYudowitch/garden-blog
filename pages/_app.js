@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import * as React from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { AuthContextProvider } from "../stores/authContext";
+
 
 config.autoAddCss = false;
 
@@ -25,7 +27,11 @@ const App = ({ Component, pageProps }) => {
     };
   }, [clearTimer]);
 
-  return <Component {...pageProps} />;
+  return (
+    <AuthContextProvider>
+      <Component {...pageProps} />
+    </AuthContextProvider>
+  );
 };
 
 export default App;
