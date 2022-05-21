@@ -13,23 +13,26 @@ export default function Home(props) {
     <div id="pageTop">
       <Head>
         <meta property="og:title" content="Julie Yudowitch Garden Blog" />
-        <meta property="og:image" content="./INSERT URL HERE" />
+        <meta property="og:image" content="./rose.webp" />
         <meta
           property="og:description"
           content="Pictures and stories about my garden"
         />
-        <meta property="og:url" content="Insert URL here" />
-        <meta property="og:image:width" content="INSERT SSI SIZE HERE" />
-        <meta property="og:image:height" content="INSERT SSI SIZE HERE" />
+        <meta
+          property="og:url"
+          content="https://julieyudowitchgardenblog.netlify.app/"
+        />
+        <meta property="og:image:width" content="155" />
+        <meta property="og:image:height" content="206" />
         <meta property="og:image:alt" content="" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="./INSERT URL HERE" />
+        <meta name="twitter:card" content="./rose.webp" />
         <meta name="twitter:title" content="Julie Yudowitch Garden Blog" />
         <meta
           name="twitter:description"
           content="Pictures and stories about my garden"
         />
-        <meta name="twitter:image" content="/INSERT SSI SIZE HERE" />
+        <meta name="twitter:image" content="/rose.webp" />
         <meta name="description" content="Julie Yudowitch Garden Blog" />
         <meta name="robots" content="index, follow" />
         <meta name="theme-color" content="#000000" />
