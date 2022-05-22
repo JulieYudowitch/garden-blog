@@ -13,7 +13,11 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footContent}>
         <div className={styles.socialLinks}>
-          <Link href="/" passHref className={styles.navlink}>
+          <Link
+            href="https://www.facebook.com/Julieyudowitch"
+            passHref
+            className={styles.navlink}
+          >
             <FontAwesomeIcon
               className={styles.socialLink}
               color="rgb(227, 238, 242)"
@@ -21,7 +25,11 @@ function Footer() {
               size="2x"
             />
           </Link>
-          <Link href="/" passHref className={styles.navlink}>
+          <Link
+            href="https://www.instagram.com/julieyudowitch"
+            passHref
+            className={styles.navlink}
+          >
             <FontAwesomeIcon
               className={styles.socialLink}
               color="rgb(227, 238, 242)"
@@ -29,7 +37,11 @@ function Footer() {
               size="2x"
             />
           </Link>
-          <Link href="/" passHref className={styles.navlink}>
+          <Link
+            href="https://twitter.com/YudowitchJulie"
+            passHref
+            className={styles.navlink}
+          >
             <FontAwesomeIcon
               className={styles.socialLink}
               color="rgb(227, 238, 242)"
