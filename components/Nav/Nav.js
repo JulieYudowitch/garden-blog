@@ -9,7 +9,7 @@ import AuthContext from '../../stores/authContext';
 function Nav(props) { 
   const [showMobileNav, setShowMobileNav] = useState(false);
   let menuref = useRef();
-  const { user, login, logout } = useContext(AuthContext);
+  const { user, login, logout, authReady } = useContext(AuthContext);
 
   useEffect(() => {
     let handler = (event) => {
@@ -41,6 +41,7 @@ function Nav(props) {
           <Link href="/" passHref>
             <div className={styles.logo}>Julie Yudowitch</div>
           </Link>
+          {user && <p>Welcome {user.email}</p>}
         </div>
 
         <div className={styles.rightsidecont}>
@@ -78,16 +79,23 @@ function Nav(props) {
                   <p className={styles.navlinkname}>BLOGS</p>
                 </Link>
               </div>
-              {!user && <div>
-                <p className={styles.navlinkname} onClick={login}>
-                  LOG IN
-                </p>
+              {authReady && <div>
+                {!user && (
+                  <div>
+                    <p className={styles.navlinkname} onClick={login}>
+                      LOG IN
+                    </p>
+                  </div>
+                )}
+                {user && (
+                  <div>
+                    <p className={styles.navlinkname} onClick={logout}>
+                      LOGOUT
+                    </p>
+                  </div>
+                )}
               </div>}
-             {user && <div>
-                <p className={styles.navlinkname} onClick={logout}>
-                  LOGOUT
-                </p>
-              </div>}
+
               <div
                 className={styles.mobilemenuicon}
                 onClick={() => setShowMobileNav(!showMobileNav)}
