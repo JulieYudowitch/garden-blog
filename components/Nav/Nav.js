@@ -78,16 +78,16 @@ function Nav(props) {
                   <p className={styles.navlinkname}>BLOGS</p>
                 </Link>
               </div>
-              <div>
+              {!user && <div>
                 <p className={styles.navlinkname} onClick={login}>
                   LOG IN
                 </p>
-              </div>
-              <div>
+              </div>}
+             {user && <div>
                 <p className={styles.navlinkname} onClick={logout}>
                   LOGOUT
                 </p>
-              </div>
+              </div>}
               <div
                 className={styles.mobilemenuicon}
                 onClick={() => setShowMobileNav(!showMobileNav)}
