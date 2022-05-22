@@ -69,18 +69,19 @@ function Nav(props) {
                   <p className={styles.navlinkname}>HOME</p>
                 </Link>
               </div>
-              <div>
-                <Link
-                  href="/blogs"
-                  ref={menuref}
-                  passHref
-                  className={styles.navlink}
-                >
-                  <p className={styles.navlinkname}>BLOGS</p>
-                </Link>
-              </div>
+
               {authReady && (
                 <div>
+                  <div>
+                    <Link
+                      href="/blogs"
+                      ref={menuref}
+                      passHref
+                      className={styles.navlink}
+                    >
+                      <p className={styles.navlinkname}>BLOGS</p>
+                    </Link>
+                  </div>
                   {!user && (
                     <div>
                       <p className={styles.navlinkname} onClick={login}>
