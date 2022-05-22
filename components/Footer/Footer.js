@@ -13,10 +13,12 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footContent}>
         <div className={styles.socialLinks}>
-          <Link
+          <a
             href="https://www.facebook.com/Julieyudowitch"
             passHref
             className={styles.navlink}
+            target="blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className={styles.socialLink}
@@ -24,11 +26,13 @@ function Footer() {
               icon={faFacebook}
               size="2x"
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://www.instagram.com/julieyudowitch"
             passHref
             className={styles.navlink}
+            target="blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className={styles.socialLink}
@@ -36,11 +40,13 @@ function Footer() {
               icon={faInstagram}
               size="2x"
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://twitter.com/YudowitchJulie"
             passHref
             className={styles.navlink}
+            target="blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon
               className={styles.socialLink}
@@ -48,7 +54,7 @@ function Footer() {
               icon={faTwitter}
               size="2x"
             />
-          </Link>
+          </a>
         </div>
         <p className={styles.copyright}>
           &copy;{new Date().getFullYear()} JULIE YUDOWITCH | ALL RIGHTS RESERVED

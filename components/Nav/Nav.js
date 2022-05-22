@@ -39,9 +39,9 @@ function Nav(props) {
       <div className={styles.navbar}>
         <div className={styles.leftside}>
           <Link href="/" passHref>
-            <div className={styles.logo}>Julie Yudowitch</div>
+            <div className={styles.logo}>Julie Yudowitch Gardening Blog</div>
           </Link>
-          {user && <p>Welcome {user.email}</p>}
+          {authReady && user && <p>Welcome {user.email}</p>}
         </div>
 
         <div className={styles.rightsidecont}>
@@ -79,22 +79,24 @@ function Nav(props) {
                   <p className={styles.navlinkname}>BLOGS</p>
                 </Link>
               </div>
-              {authReady && <div>
-                {!user && (
-                  <div>
-                    <p className={styles.navlinkname} onClick={login}>
-                      LOG IN
-                    </p>
-                  </div>
-                )}
-                {user && (
-                  <div>
-                    <p className={styles.navlinkname} onClick={logout}>
-                      LOGOUT
-                    </p>
-                  </div>
-                )}
-              </div>}
+              {authReady && (
+                <div>
+                  {!user && (
+                    <div>
+                      <p className={styles.navlinkname} onClick={login}>
+                        LOG IN
+                      </p>
+                    </div>
+                  )}
+                  {user && (
+                    <div>
+                      <p className={styles.navlinkname} onClick={logout}>
+                        LOGOUT
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
 
               <div
                 className={styles.mobilemenuicon}
