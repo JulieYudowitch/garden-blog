@@ -20,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
       netlifyIdentity.on("logout", () => {
         setUser(null);
       });
-      netlifyIdentity.on("init", () => {
+      netlifyIdentity.on("init", (user) => {
         setUser(user);
         setAuthReady(true);
       });
