@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagram,
+  faTiktok,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/dist/client/link";
@@ -52,6 +53,20 @@ function Footer() {
               className={styles.socialLink}
               color="rgb(227, 238, 242)"
               icon={faTwitter}
+              size="2x"
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@julie_yudowitch"
+            passHref
+            className={styles.navlink}
+            target="blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              className={styles.socialLink}
+              color="rgb(227, 238, 242)"
+              icon={faTiktok}
               size="2x"
             />
           </a>
