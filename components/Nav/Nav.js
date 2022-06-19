@@ -3,13 +3,10 @@ import Link from "next/link";
 import { useState, useEffect, useRef, useContext } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import React from 'react';
-import AuthContext from '../../stores/authContext';
-
 
 function Nav(props) { 
   const [showMobileNav, setShowMobileNav] = useState(false);
   let menuref = useRef();
-  const { user, login, logout, authReady } = useContext(AuthContext);
 
   useEffect(() => {
     let handler = (event) => {
@@ -41,7 +38,6 @@ function Nav(props) {
           <Link href="/" passHref>
             <div className={styles.logo}>Julie Yudowitch Gardening Blog</div>
           </Link>
-          {authReady && user && <p>Welcome {user.email}</p>}
         </div>
 
         <div className={styles.rightsidecont}>
@@ -69,36 +65,16 @@ function Nav(props) {
                   <p className={styles.navlinkname}>HOME</p>
                 </Link>
               </div>
-
-              {authReady && (
-                <div>
-                  <div>
-                    <Link
-                      href="/blogs"
-                      ref={menuref}
-                      passHref
-                      className={styles.navlink}
-                    >
-                      <p className={styles.navlinkname}>BLOGS</p>
-                    </Link>
-                  </div>
-                  {!user && (
-                    <div>
-                      <p className={styles.navlinkname} onClick={login}>
-                        LOG IN
-                      </p>
-                    </div>
-                  )}
-                  {user && (
-                    <div>
-                      <p className={styles.navlinkname} onClick={logout}>
-                        LOGOUT
-                      </p>
-                    </div>
-                  )}
-                </div>
-              )}
-
+              <div>
+                <Link
+                  href="/login"
+                  ref={menuref}
+                  passHref
+                  className={styles.navlink}
+                >
+                  <p className={styles.navlinkname}>LOG IN</p>
+                </Link>
+              </div>
               <div
                 className={styles.mobilemenuicon}
                 onClick={() => setShowMobileNav(!showMobileNav)}

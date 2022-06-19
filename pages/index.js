@@ -49,6 +49,7 @@ export default function Home(props) {
           blurDataURL="/bags.webp"
         />
         <p>Under Construction</p>
+       
       </div>
 
       <Footer />
